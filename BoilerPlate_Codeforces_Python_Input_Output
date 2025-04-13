@@ -1,0 +1,27 @@
+import math
+small_primes = []
+tests = int(input())
+for test in range(tests):
+    num, rep = map(int, input().split())
+    if rep >= 2:
+        prime = False
+    else:
+        prime = True
+        upto = math.sqrt(num)
+        counter = 2
+        while counter <= upto+3:
+            if num%counter == 0:
+                prime = False
+                break
+            counter += 1
+    if num == 1:
+        if rep == 2:
+            print("YES")
+        else:
+            print("NO")
+    elif rep == 1 and num in [2,3,5,11]:
+        print("YES")
+    elif prime:
+        print("YES")
+    else:
+        print("NO")
