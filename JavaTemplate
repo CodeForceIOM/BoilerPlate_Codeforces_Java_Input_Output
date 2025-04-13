@@ -1,0 +1,39 @@
+package CodeForce.Round1017;
+
+import java.util.Scanner;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+          // The following line reads the number of test cases which are given, which naturally is always an integer.
+          int noOfTest = in.nextInt();
+
+        // The following code assumes each test case as an integer, and two arrays of integers. You read in each
+        // test case and then run your problem solution again your solution code.
+        //
+        for (int i = 0; i < noOfTest; i++) {
+            int noMaterials = in.nextInt();
+            List<Integer> have = new ArrayList<Integer>();
+            List<Integer> needed = new ArrayList<Integer>();
+
+            for (int j = 0; j < noMaterials; j++) {
+                have.add(in.nextInt());
+            }
+
+            for (int j = 0; j < noMaterials; j++) {
+                needed.add(in.nextInt());
+            }
+
+            // 
+            // CODE FOR SOLUTION HERE
+            //
+
+            // The output on your problem will be specified within the problem desrciption.
+            // The data type required may be a string in which case you should use:
+            // System.out.println("REQUIRED DATA")
+            // Other data types maybe required such as arrays 1-2 dimensional, if unsure ask Magda.
+            }
+        }
+    }
